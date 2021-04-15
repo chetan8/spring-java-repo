@@ -72,18 +72,21 @@
 		</plugins>
 		<finalName>${project.name}test</finalName>
 	</build>
+	...
+	
 	distributionManagement>
         <repository>
-            <id>snapshot</id>
-            <name>snapshot</name>
-            <url></url>
+            <id>release</id>
+            <name>release</name>
+            <url>http://192.168.1.2:8081/repository/newdeploy/</url>
         </repository>
         
         <snapshotRepository>
              <id>snapshots</id>
             <name>Snapshots</name>
-            <url>http://192.168.1.2:8081/#browse/browse:newdeploy</url>
+            <url>http://192.168.1.2:8081/repository/newdeploy/</url>
         <snapshotRepository>
-     <distributionManagement>
+		
+    <distributionManagement>
 
-</project>
+    </project>
